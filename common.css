@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'CookieRun';
+    src: url('./font/CookieRun-Black.eot');
+    src: url('./font/CookieRun-Black.eot?#iefix') format('embedded-opentype'),
+        url('./font/CookieRun-Black.woff2') format('woff2'),
+        url('./font/CookieRun-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CookieRunBold';
+    src: url('./font/CookieRun-Bold.eot');
+    src: url('./font/CookieRun-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./font/CookieRun-Bold.woff2') format('woff2'),
+        url('./font/CookieRun-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,address,code,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figure,figcaption,footer,header,hgroup,menu,nav,section,main,audio,video {margin: 0; padding: 0;}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main {display: block}
+
+/* button태그에 손모양 커서 */
+button {cursor:pointer}
+/* 익스하위버전에서 이미지 선없애기 */
+fieldset,img {border: 0; vertical-align: top}
+/* 리스트 기호 빼기 */
+ol,ul {list-style: none}
+/* 태그 기본 기울임꼴 제거 */
+address,em {font-style: normal}
+/* 페이지안에서 가장 많은 링크색 지정 */
+a {text-decoration: none; color: #686868;}
+/* iframe으로 외부컨텐츠를 연결했을때
+외부컨텐츠안쪽내용이 우리페이지에 영향을 주지못하도록 가려줌
+*/
+iframe {overflow: hidden; border: 0}
+/* 칸의 선을 합치기, 칸의 간격없애기, 가로를 늘려줌 */
+table {border-collapse: collapse; border-spacing: 0; width: 100%}
+/* 굵기 빼고 헤딩태그 폰트크기를 body에 선언한 크기와 일치시킴 */
+h1,h2,h3,h4,h5,h6 {font-weight: normal; font-size: 100%}
+/* 폼요소의 높이가 다를때 요소끼리 세로정렬시킴 */
+input,select,textarea,button {vertical-align: middle; margin: 0; padding: 0}
+/* textarea 리사이즈기능 빼기 */
+textarea {resize: none}
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+#wrap {
+    position:relative;
+    height: 100%;
+    margin: 0 auto;
+    /* background: linear-gradient(to bottom, #5b4cfe 0%,#c1a2d9 100%); */
+    background: #5b4cfe;
+}
+
+.member {
+    float: left;
+    margin-left: 80px;
+    font-size: 16px;
+    padding-top: 40px;
+    left:50%;
+    color: #686868;
+}
+.gnb {
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #c3bfec;
+    z-index: 9999;
+    margin: 0 auto;
+}
+.gnb .gnb_wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+.gnb .gnb_wrap .logo {
+    height: 70px;
+    margin-top:15px;
+    margin-left:10px;
+    float: left;
+}
+.gnb .gnb_wrap audio {
+    float: right;
+    margin-top:20px;
+    outline: none;
+} 
+
+.imageswrap {
+    position: relative;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.815); 
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 99;
+}
+.bgm_comment{
+    position: absolute;
+    right: 0%;
+    margin-top: 110px;
+    margin-right: 20px;
+    font-family: 'CookieRun';
+    color:#675dda;
+}
+.background {
+    position: absolute;
+    bottom:0%;
+    margin-top: -280px;
+    overflow: hidden;
+    width: 100%;
+    z-index: 9;
+}
+
+.cookies {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    padding:20px;
+    filter: brightness(20%);
+    transition: filter 1s ;
+    margin-top:-20px;
+}
+.cookieposition {
+    margin-top:10%;
+    z-index: 999;
+}
+.cookieposition li {
+    height: 180px;
+    width: 230px;
+    float: left;
+    margin: 0 auto;
+    /* border: 2px solid black;
+    background: #c3bfec; */
+    margin-left: 10px;
+    margin-top: 50px;
+    overflow:hidden;
+}
+.cookieposition li:hover .cookies {
+    filter: brightness(100%);
+}
+.cookieposition li:nth-child(2) .cookies {
+    height: 170%;
+    margin-top:-140px;
+    margin-left: -30px;
+}
+.footer {
+    position: absolute;
+    left:50%;
+    margin-left: -100px;
+    bottom:0%;
+    margin-bottom: 50px;
+    font-size:12px;
+    color:#686868;   
+}
+
+.showwrap {
+    display:none;
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+.showtitle {
+    padding:50px;
+    padding-top: 30px;
+    position: relative;
+    left:50%;
+    margin-left:-600px;
+    width:1200px;
+    height: 200px;
+}
+.showtitle .top {
+    position: relative;
+    width:700px;
+    left:50%;
+    margin-left: -350px;
+}
+.showtitle #showname {
+    position:absolute;
+    left:50%;
+    width: 400px;
+    margin-left:-200px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-family: 'CookieRunBold';
+}
+.showtitle #showcookie {
+    position: absolute;
+    width:150px;
+    right: 0%;
+}
+
+#showpaint {
+    position: absolute;
+    height: 700px;
+    margin-left: -350px;
+    left:50%;
+    margin-top:225px;
+}
+#showstory {
+    position: absolute;
+    text-align: left;
+    width: 530px;
+    left:50%;
+    margin-left:-340px;
+    color:#bdbdbd;
+    font-size: 12px;
+    margin-top:70px;
+}
+#showartist {
+    position: absolute;
+    margin-top: 950px;
+    text-align: center;
+    left:50%;
+    width: 600px;
+    margin-left:-300px;
+    font-size: 12px;
+    color:#bdbdbd;
+}
+
+.btn {
+    text-indent: -9999px;
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    margin-top:512px;
+    background:url(./images/btn.png) no-repeat;
+    background-size: 160px;
+    border:none;
+    left:50%;
+    margin-left:500px;
+    outline: none;
+}
+.prev_btn {
+    transform: rotate(180deg);
+    margin-left:-500px;
+}
+.close_btn {
+    background:url(./images/closebtn.png) no-repeat;
+    background-size: 160px;
+    margin-top:100px;
+    z-index:9999;
+}
+.btn:hover {
+    background-position: -96px 0px;
+}
+

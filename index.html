@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=1200">
+    <title>NINI | Cookierun 쿠키런 </title>
+    <link rel="shortcut icon" type="image⁄x-icon" href="./images/AnyConv.com__icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./common.css">
+    <script src="./js/slide.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrap">
+        <div class="gnb">
+            <div class="gnb_wrap">
+                <a href="./index.html"><img alt="logo" class="logo" src="./images/logo.png"></a>
+                <p class="member"> 대홍이랑 · 디뿌 · 나날 · 코임 · 솔려 · 뮈담 · 알베애인 · 정야슬 · 새옛 · 촘챠 · 프리드좋아 · 물흐르니  </p>
+            </div>
+        </div>
+        <div class="imageswrap">
+            <!-- <img class="background" alt="backgroundimg" src="images/background.png"> -->
+            <ul class="cookieposition">
+                <li> <img id="paint1" class="cookies" alt="" src="images/cookie1.png" onclick="imgclick(1)"> </li>
+                <li> <img id="paint2" class="cookies" alt="" src="images/cookie2.png" onclick="imgclick(2)"> </li>
+                <li> <img id="paint3" class="cookies" alt="" src="images/cookie3.png" onclick="imgclick(3)"> </li>
+                <li> <img id="paint4" class="cookies" alt="" src="images/cookie4.png" onclick="imgclick(4)"> </li>
+                <li> <img id="paint5" class="cookies" alt="" src="images/cookie5.png" onclick="imgclick(5)"> </li>
+                <li> <img id="paint6" class="cookies" alt="" src="images/cookie6.png" onclick="imgclick(6)"> </li>
+                <li> <img id="paint7" class="cookies" alt="" src="images/cookie7.png" onclick="imgclick(7)"> </li>
+                <li> <img id="paint8" class="cookies" alt="" src="images/cookie8.png" onclick="imgclick(8)"> </li>
+                <li> <img id="paint9" class="cookies" alt="" src="images/cookie9.png" onclick="imgclick(9)"> </li>
+                <li> <img id="paint10" class="cookies" alt="" src="images/cookie10.png" onclick="imgclick(10)"> </li>
+                <li></li>
+                <li> <img id="paint11" class="cookies" alt="" src="images/cookie11.png" onclick="imgclick(11)"> </li>
+                <li> <img id="paint12" class="cookies" alt="" src="images/cookie12.png" onclick="imgclick(12)"> </li>
+                <li> <img id="paint13" class="cookies" alt="" src="images/cookie13.png" onclick="imgclick(13)"> </li>
+
+            </ul>
+
+            <p class="footer"> 20210120 니니 길드 쿠키런 합작 </p>
+        </div>
+
+        <div class="showwrap">
+            <img id="showpaint" src="images/paint1.png" alt="paint">
+            <p id="showartist">painted by 이랑</p>
+            <button class="btn prev_btn" onclick="prevpaint();"> 이전 그림 </button>
+            <button class="btn next_btn" onclick="nextpaint();"> 다음 그림 </button>
+            <button class="btn close_btn" type="button" onclick="closewrap();"> 닫기 </button>
+            <div class="showtitle">
+                <div class="top">
+                    <h4 id="showname"> 쿠키 이름 </h4>
+                    <img id="showcookie" src="images/cookie1.png" alt="">
+                </div>
+                <p id="showstory"> 쿠키 설명 </p>
+            </div>
+        </div>
+        <img class="background" alt="backgroundimg" src="images/background.png">
+
+    </div>
+    <script>
+        $(document).ready(function () {});
+
+        $('.cookies').on('click', function () {
+            $('#showpaint').css('opacity', '0%');
+            $('#showpaint').animate({
+                opacity: '100%'
+            }, 500);
+        });
+
+        $('.next_btn').on('click', function () {
+            $('#showpaint').css('opacity', '0%');
+            $('#showpaint').animate({
+                opacity: '100%'
+            }, 500);
+        });
+
+        $('.prev_btn').on('click', function () {
+            $('#showpaint').css('opacity', '0%');
+            $('#showpaint').animate({
+                opacity: '100%'
+            }, 500);
+        });
+    </script>
+
+</body>
+
+</html>
