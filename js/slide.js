@@ -16,7 +16,7 @@ function imgclick(img) {
     next[0].style.display = "block";
     if (cookienum == 1) {
         prev[0].style.display = "none";
-    } else if (cookienum == 13) {
+    } else if (cookienum == 12) {
         next[0].style.display = "none";
     }
 }
@@ -30,7 +30,7 @@ function nextpaint() {
     prev[0].style.display = "block";
     next[0].style.display = "block";
     cookienum++;
-    if (cookienum >= 13) {
+    if (cookienum >= 12) {
         next[0].style.display = "none";
     }
 
@@ -103,7 +103,7 @@ function cookieset(cookienum) {
             nstr = "석류맛 쿠키";
             cstr = "images/cookie" + cookienum + ".png";
             sstr = "강력한 주술의 땅에서 자란 석류 한 알을 통째로 얹어 영험한 기운이 느껴지는 쿠키. 진하게 농축된 석류 시럽으로 맛을 더해 유난히도 새빨갛다. 신비로운 석류 나무를 모시던 어느 날, 어둠을 따르라는 운명을 계시받게 되는데… 혼란에 빠진 그 순간 약속한 듯 어둠의 무리가 몰아닥쳐 마을을 삼켜 버렸고, 자욱한 연기만이 피어나는 그곳에 단 하나의 그림자가 우뚝 서 있었다. 그제야 석류맛 쿠키는 자신이 섬겨야 할 상대가 누구인지 알게 되었다. 어떤 계시를 보았기에, 석류맛 쿠키는 그림자를 따라나선 걸까?";
-            pstr = "images/paint" + cookienum + ".gif";
+            pstr = "images/paint" + cookienum + ".png";
             paint.style.marginLeft = "-350px";
             astr = "painted by 려도";
             break;
@@ -121,15 +121,15 @@ function cookieset(cookienum) {
             nstr = "슈크림맛 쿠키";
             cstr = "images/cookie" + cookienum + ".png";
             sstr = "생크림을 가득 얹어 보기만 해도 달콤하고 기분 좋아지는 쿠키. 어딘가 모르게 어리숙해서 항상 마음을 놓을 수 없는 철부지이지만, 다듬어지지 않은 잠재력이 어마어마한 것 같다. 오래된 서적에서 대단한 마법사가 되는 법을 발견하고는 열심히 마법에 매진하고 있지만 아직 잘 되지 않는것 같다. 워낙 슈가 부드럽고 얇아서 멘탈이 부서지기 쉬운 타입. 과연 슈크림맛 쿠키는 멋진 마법사가 될 수 있을까?";
-            pstr = "images/paint" + cookienum + ".gif";
+            pstr = "images/paint" + cookienum + ".png";
             paint.style.marginLeft = "-350px";
             astr = "painted by 알베";
             break;
         }
-        case 8: { //샤이닝글리터
-            nstr = "샤이닝글리터맛 쿠키";
+        case 8: { //양파맛
+            nstr = "장미맛 쿠키";
             cstr = "images/cookie" + cookienum + ".png";
-            sstr = "아침에는 음악방송에서, 점심에는 사인 남긴 가게에서, 저녁에는 빌딩 광고판에서! 하루라도 샤이닝글리터맛 쿠키의 얼굴을 보지 않는 날은 없다! 중독적인 노래와 독보적인 퍼포먼스로 데뷔하자마자 단숨에 슈퍼스타가 된 쿠키. 번쩍번쩍 화려하기만 하다고 비판하는 쿠키들도 직접 공연을 보면 빠짐없이 사로잡힌다. 카리스마는 무대에서만 발휘되는 게 아니다! 이 쿠키가 하는 건 뭐든지 유행이 되어, 거리에서 똑같은 리본 머리 무리를 볼 수 있다고. 휴일에는 편한 차림으로 아끼는 핑크 슈퍼 카를 타고 질주하는 쿠키. 대로가 순식간에 콘서트장으로 변하는 걸 보면 타고난 빛은 감출 수 없어!";
+            sstr = "강렬한 탱고 음악과 숨막히는 장미향이 흐르면 그곳이 바로 장미맛 쿠키의 무대! 타고난 댄서인 이 쿠키는 장미꽃잎 드레스 자락이 돋보이는 정열적인 몸놀림으로 어디서나 초대가 끊이지 않는다. 영감이 느껴지는 쿠키의 허리를 끌어당겨 광장 한복판에서 갑자기 춤추기도 한다는데, 그럴 땐 당황하지 말고 스텝을 뒤따라 밟다 보면 모든 속박에서 벗어나는 황홀한 낙원을 맛볼 수 있다고. 농염한 눈빛과 마주치면 누구든 단숨에 빠져들지만 춤도 사랑도 한곳에 머무르지 않고 순간의 이끌림에 몸을 맡긴다는 쿠키. 장미는 자유롭게 피어서 더 아름다운 게 아닐까.";
             pstr = "images/paint" + cookienum + ".gif";
             paint.style.marginLeft = "-350px";
             astr = "painted by 야슬";
@@ -160,16 +160,7 @@ function cookieset(cookienum) {
             astr = "painted by 프리드좋아";
             break;
         }
-
-        case 12: { //생일케이크
-            nstr = "생일케이크맛 쿠키";
-            cstr = "images/cookie" + cookienum + ".png";
-            sstr = "특별하고 기분 좋은 날, 접시 위에 가지런히 놓인 생일케이크처럼 예쁘고 사랑스러운 쿠키. 부드러운 생크림만큼이나 상냥한 파티플래너인 이 쿠키는 세상을 행복하게 하는 여러가지 방법을 알고 있다고 한다. 꼼꼼한 일정 관리와 쿠키들의 취향을 파악하는 건 기본! 알록달록 풍선과 리본, 찻잔과 디저트 접시, 풍성한 젤리와 선물상자까지, 생일케이크맛 쿠키가 정성들여 준비한 파티는 소중하고 완벽하기만 하다. 파티가 계획대로 되지 않을 때면 머리 위 양초가 소리없이 녹아내리기 시작한다는 쿠키. 하지만 행복을 전해줘야 하기 때문에 얼굴에서 미소를 잃는 법은 없다.";
-            pstr = "images/paint" + cookienum + ".gif";
-            astr = "painted by 무루";
-            break;
-        }
-        case 13: { //바다요정
+        case 12: { //바다요정
             nstr = "바다요정맛 쿠키";
             cstr = "images/cookie" + cookienum + ".png";
             sstr = "바다를 벗어나면 얼어버리는 차가운 저주에 걸려있던 바다요정 쿠키. 운명을 거스르려다가 얼어붙어 버렸지만, 쿠키들이 따뜻한 마음을 모아준 덕에 돌아올 수 있었다. 지금은 냉기와 물의 힘으로 쿠키들의 든든한 지원군이 되는 바다요정 쿠키. 쉼 없이 흐르는 머리카락 너머의 눈빛은 아직도 서글프지만, 운명에 맞서려는 생각은 변함없이 강렬하다. 물거품이 되어 사라지지 않도록 손에서 절대 검을 놓는 일이 없기를...";
