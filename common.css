@@ -147,6 +147,9 @@ html, body {
     margin-top: 50px;
     overflow:hidden;
 }
+.cookieposition li:nth-child(11){
+    margin-left:110px;
+}
 .cookieposition li:hover .cookies {
     filter: brightness(100%);
 }
